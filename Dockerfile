@@ -12,7 +12,7 @@ FROM eclipse/stack-base:ubuntu
 ENV NVM_DIR="$HOME/.nvm"
 
 # Install latest NVM and latest NodeJS LTS
-git clone https://github.com/creationix/nvm.git "$NVM_DIR"; \
+RUN git clone https://github.com/creationix/nvm.git "$NVM_DIR"; \
   cd "$NVM_DIR"; \
   git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`; \
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; \
