@@ -7,7 +7,7 @@
 # Madalin Ignisca - custom NodeJS with NVM Docker image
 # Codenvy, S.A. - initial API and implementation
 
-FROM eclipse/stack-base:centos
+FROM eclipse/stack-base:ubuntu
 
 ENV NVM_DIR="$HOME/.nvm"
 
